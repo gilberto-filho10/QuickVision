@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "854249919447",
+    "project_id": "pi-qv-e738a",
+    "storage_bucket": "pi-qv-e738a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:854249919447:android:461d1fa641f529c2b27192",
+        "android_client_info": {
+          "package_name": "com.example.quickvision"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "854249919447-glr9d7a1pvk95u23bv84gegemq1m3sim.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCs5gMuLDgdRDt1tqWMJHH2J-Z_ne6irEo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "854249919447-glr9d7a1pvk95u23bv84gegemq1m3sim.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
