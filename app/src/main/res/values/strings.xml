@@ -2,5 +2,9 @@
     <string name="app_name">QuickVision</string>
     <string name="entrar">Entrar</string>
     <string name="text_esqueci">Esqueceu a senha? Clique aqui</string>
+    <string name="title_menu">Menu</string>
+    <string name="button_agendar">Agendar</string>
+    <string name="button_consulta">Consultar Agendamentos</string>
+    <string name="button_entrada">Liberar Entrada</string>
 
 </resources>
