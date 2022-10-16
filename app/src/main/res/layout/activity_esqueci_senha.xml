@@ -6,4 +6,45 @@
     android:layout_height="match_parent"
     tools:context=".Esqueci_senha">
 
+    <TextView
+        android:id="@+id/text_esqueci_senha"
+        style="@style/TextView_Menu"
+        android:text="@string/tittle_esqueci"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <EditText
+        android:id="@+id/edit_recuperar_email"
+        style="@style/Edit_Text"
+        android:hint="@string/hint_email"
+        android:layout_marginTop="100dp"
+        android:drawableRight="@drawable/ic_email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_esqueci_senha"/>
+
+    <EditText
+        android:id="@+id/edit_confirmar_email"
+        style="@style/Edit_Text"
+        android:hint="@string/hint_confirm_email"
+        android:layout_marginTop="20dp"
+        android:drawableRight="@drawable/ic_email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_recuperar_email"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_enviar"
+        style="@style/Button"
+        android:text="@string/bt_enviar"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_confirmar_email"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

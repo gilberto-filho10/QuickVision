@@ -2,9 +2,16 @@
     <string name="app_name">QuickVision</string>
     <string name="entrar">Entrar</string>
     <string name="text_esqueci">Esqueceu a senha? Clique aqui</string>
+    <string name="tittle_esqueci">Recuperar Senha</string>
+    <string name="bt_enviar">Enviar</string>
     <string name="title_menu">Menu</string>
     <string name="button_agendar">Agendar</string>
     <string name="button_consulta">Consultar Agendamentos</string>
     <string name="button_entrada">Liberar Entrada</string>
+    <string name="button_logout">Sair da Conta</string>
+    <string name="hint_email">E-mail</string>
+    <string name="hint_confirm_email">Confirme seu E-mail</string>
+    <string name="hint_senha">Senha</string>
+
 
 </resources>

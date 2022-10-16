@@ -43,4 +43,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/bt_consulta"/>
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_logout"
+        style="@style/Button2"
+        android:textColor="@color/white"
+        android:text="@string/button_logout"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bt_entrada"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
