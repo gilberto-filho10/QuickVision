@@ -21,6 +21,14 @@ public class Menu extends AppCompatActivity {
         getSupportActionBar().hide(); // Para esconder a barra roxa feia
         IniciarComponentes();
 
+        bt_agendar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Menu.this, Agendar.class);
+                startActivity(intent);
+            }
+        });
+
         /*=============================================================================
         Botão de logout, verifica se existe uma sessão ativa no app e caso sim, ele
         finaliza ela e manda para a tela de login
