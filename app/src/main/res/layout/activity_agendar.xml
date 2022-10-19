@@ -77,7 +77,6 @@
         app:layout_constraintTop_toBottomOf="@id/edit_data"/>
 
 
-
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/bt_salvar"
         style="@style/Button"
@@ -95,5 +94,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/edit_hora"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
