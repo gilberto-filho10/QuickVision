@@ -54,7 +54,32 @@
         android:inputType="text"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/edit_telefone"/>
+        app:layout_constraintTop_toBottomOf="@id/rb_grupo"/>
+
+    <RadioGroup
+        android:id="@+id/rb_grupo"
+        style="@style/Edit_Text"
+
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_telefone">
+
+        <RadioButton
+            android:id="@+id/rb_visitante"
+            style="@style/Radio_Button"
+            android:text="@string/button_visitante"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <RadioButton
+            android:id="@+id/rb_terceiro"
+            style="@style/Radio_Button"
+            android:text="@string/button_terceiro"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </RadioGroup>
 
     <EditText
         android:id="@+id/edit_data"

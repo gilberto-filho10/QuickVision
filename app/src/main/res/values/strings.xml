@@ -20,5 +20,7 @@
     <string name="text_hora">Hora</string>
     <string name="button_salvar">Salvar</string>
     <string name="button_cancelar">Cancelar</string>
+    <string name="button_visitante">Visitante</string>
+    <string name="button_terceiro">Prestador</string>
 
 </resources>
