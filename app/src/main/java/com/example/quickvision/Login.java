@@ -18,6 +18,10 @@ import com.google.android.gms.tasks.Task;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
+import com.google.firebase.auth.FirebaseAuthInvalidUserException;
+import com.google.firebase.auth.FirebaseAuthUserCollisionException;
+import com.google.firebase.auth.FirebaseAuthWeakPasswordException;
 import com.google.firebase.auth.FirebaseUser;
 
 public class Login extends AppCompatActivity {
@@ -26,7 +30,6 @@ public class Login extends AppCompatActivity {
     private Button bt_entrar;
     private EditText edit_email, edit_senha;
     private ProgressBar progressbar;
-    String[] mensagens = {"Preencha todos os campos"};
 
 
     @Override
@@ -53,9 +56,7 @@ public class Login extends AppCompatActivity {
                 String senha = edit_senha.getText().toString();
 
                 if(email.isEmpty() || senha.isEmpty()){
-                    Snackbar snackbar = Snackbar.make(v, mensagens[0],Snackbar.LENGTH_SHORT);
-                    snackbar.setBackgroundTint(Color.WHITE);
-                    snackbar.setTextColor(Color.BLACK);
+                    Snackbar snackbar = Snackbar.make(v, R.string.erro_preenchimento,Snackbar.LENGTH_SHORT);
                     snackbar.show();
                 } else{
                     AutenticarUsuario(v);
@@ -72,7 +73,8 @@ public class Login extends AppCompatActivity {
     private  void AutenticarUsuario(View view){
         String email = edit_email.getText().toString();
         String senha = edit_senha.getText().toString();
-        FirebaseAuth.getInstance().signInWithEmailAndPassword(email, senha).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+        FirebaseAuth.getInstance().signInWithEmailAndPassword(email, senha)
+                .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
@@ -88,12 +90,17 @@ public class Login extends AppCompatActivity {
                     String erro;
                     try {
                         throw task.getException();
+                    } catch(FirebaseAuthWeakPasswordException e){
+                        erro = String.valueOf(R.string.erro_senha);
+                    } catch (FirebaseAuthUserCollisionException e){
+                        erro = String.valueOf(R.string.erro_cadastrar_user);
+                    } catch (FirebaseAuthInvalidCredentialsException |
+                            FirebaseAuthInvalidUserException e){
+                        erro = String.valueOf(R.string.erro_email);
                     } catch (Exception e){
                         erro = "Erro " + e;
                     }
                     Snackbar snackbar = Snackbar.make(view, erro,Snackbar.LENGTH_SHORT);
-                    snackbar.setBackgroundTint(Color.WHITE);
-                    snackbar.setTextColor(Color.BLACK);
                     snackbar.show();
                 }
             }
