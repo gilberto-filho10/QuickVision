@@ -97,9 +97,9 @@ public class Agendar extends AppCompatActivity {
             agendamento.put("Tipo", tipo[1]);
         }
 
-        userID = FirebaseAuth.getInstance().getCurrentUser().getUid();
+        //userID = FirebaseAuth.getInstance().getCurrentUser().getUid();
 
-        DocumentReference documentReference = db.collection("Agendamentos").document(userID);
+        DocumentReference documentReference = db.collection("Agendamentos").document(nome);
         documentReference.set(agendamento).addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override
             public void onSuccess(Void aVoid) {

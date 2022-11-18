@@ -29,7 +29,7 @@
     <string name="erro_cadastrar_user">Usuário já cadastrado</string>
     <string name="erro_email">O e-mail não é válido</string>
     <string name="salvo_agendamento">Agendamento efetuado com sucesso</string>
-    <string name="falha_agendamento">Agendamento efetuado com sucesso</string>
+    <string name="falha_agendamento">Ocorreu um problema com o agendamento</string>
     <string name="falha_compartilhar">Não foi identificado um QR Code para compartilhar</string>
 
 </resources>

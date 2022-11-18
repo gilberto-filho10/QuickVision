@@ -8,16 +8,21 @@ import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.zxing.WriterException;
+
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.util.BitSet;
 
+import androidmads.library.qrgenearator.QRGContents;
+import androidmads.library.qrgenearator.QRGEncoder;
 
 public class QRcode extends AppCompatActivity {
 
@@ -52,8 +57,15 @@ public class QRcode extends AppCompatActivity {
             String hora = info.getString("Hora");
             String[] tipo = info.getStringArray("Tipo");
 
+            /* Gerando GR Code */
+            Bitmap bitmap;
+            QRGEncoder qrgEncoder;
+            qrgEncoder = new QRGEncoder("Nome: " + nome + "\n" + "CPF: " + cpf + "\n" + "Telefone: " + telefone + "\n" + "Observações: " + obs
+                    + "\n" + "Agendamento : " + data + "\n" + "Hora: " + hora,null, QRGContents.Type.TEXT, 500);
+            bitmap = qrgEncoder.getBitmap();
+            img_qrcode.setImageBitmap(bitmap);
         }
-        /* Gerando GR Code */
+
 
 
     }
@@ -62,7 +74,7 @@ public class QRcode extends AppCompatActivity {
         /* https://www.youtube.com/watch?v=4MDeqMU1H_U */
         if(img_qrcode.getDrawable() != null){
             Intent intent = new Intent(Intent.ACTION_SEND);
-            intent.setType("image/png");
+            intent.setType("image/jpeg");
 
             BitmapDrawable drawable = (BitmapDrawable) img_qrcode.getDrawable();
             Bitmap bitmap = drawable.getBitmap();
