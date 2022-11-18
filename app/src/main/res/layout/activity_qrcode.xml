@@ -37,12 +37,24 @@
         style="@style/Button"
         android:layout_width="230dp"
         android:layout_height="65dp"
-        android:layout_marginBottom="48dp"
+        android:layout_marginBottom="32dp"
         android:text="@string/button_share"
+        app:layout_constraintBottom_toTopOf="@+id/bt_voltar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_voltar"
+        style="@style/Button"
+        android:layout_width="230dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="52dp"
+        android:text="@string/button_voltar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

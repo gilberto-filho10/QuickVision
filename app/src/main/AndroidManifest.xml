@@ -13,6 +13,20 @@
         android:theme="@style/Theme.QuickVision"
         tools:targetApi="31">
         <activity
+            android:name=".Consultar"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Configuracoes"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".QRcode"
             android:exported="false">
             <meta-data

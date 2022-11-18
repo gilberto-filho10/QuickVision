@@ -15,8 +15,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.zxing.WriterException;
-
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.util.BitSet;
@@ -27,7 +25,7 @@ import androidmads.library.qrgenearator.QRGEncoder;
 public class QRcode extends AppCompatActivity {
 
     private ImageView img_qrcode;
-    private Button bt_compartilhar;
+    private Button bt_compartilhar, bt_voltar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +39,15 @@ public class QRcode extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Compartilhar();
+            }
+        });
+
+        bt_voltar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(QRcode.this, Menu.class);
+                startActivity(intent);
+                finish();
             }
         });
 
@@ -97,5 +104,6 @@ public class QRcode extends AppCompatActivity {
     private void IniciarComponentes(){
         img_qrcode = findViewById(R.id.img_qrcode);
         bt_compartilhar = findViewById(R.id.bt_compartilhar);
+        bt_voltar = findViewById(R.id.bt_voltar);
     }
 }

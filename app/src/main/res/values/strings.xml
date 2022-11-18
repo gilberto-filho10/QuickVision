@@ -31,5 +31,9 @@
     <string name="salvo_agendamento">Agendamento efetuado com sucesso</string>
     <string name="falha_agendamento">Ocorreu um problema com o agendamento</string>
     <string name="falha_compartilhar">Não foi identificado um QR Code para compartilhar</string>
+    <string name="button_config">Configurações</string>
+    <string name="button_voltar">Voltar</string>
+    <string name="button_pesquisa">Pesquisar</string>
+    <string name="hint_busca">Informe um nome para busca</string>
 
 </resources>

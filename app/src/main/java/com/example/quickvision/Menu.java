@@ -29,6 +29,15 @@ public class Menu extends AppCompatActivity {
             }
         });
 
+        bt_consulta.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Menu.this, Consultar.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
         /*=============================================================================
         Botão de logout, verifica se existe uma sessão ativa no app e caso sim, ele
         finaliza ela e manda para a tela de login

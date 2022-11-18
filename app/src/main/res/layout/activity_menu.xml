@@ -41,13 +41,22 @@
         app:layout_constraintTop_toBottomOf="@id/bt_agendar"/>
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_config"
+        style="@style/Button"
+        android:text="@string/button_config"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bt_consulta"/>
+
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/bt_entrada"
         style="@style/Button"
         android:text="@string/button_entrada"
         android:layout_marginTop="50dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/bt_consulta"/>
+        app:layout_constraintTop_toBottomOf="@id/bt_config"/>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/bt_logout"
