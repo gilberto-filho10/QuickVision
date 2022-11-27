@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">QuickVision</string>
+    <string name="entrar">Connexion</string>
+    <string name="text_esqueci">Mot de passe oublié ? Cliquez ici</string>
+    <string name="tittle_esqueci">Récupérer le mot de passe</string>
+    <string name="tittle_qrcode">Votre code QR</string>
+    <string name="bt_enviar">Envoyer</string>
+    <string name="title_menu">Menu</string>
+    <string name="button_agendar">Planifier</string>
+    <string name="button_consulta">Vérifier les rendez-vous</string>
+    <string name="button_entrada">Libérer l entrée</string>
+    <string name="button_logout">Déconnexion</string>
+    <string name="button_share">Partager</string>
+    <string name="hint_email">E-mail</string>
+    <string name="hint_confirm_email">Confirmez votre e-mail</string>
+    <string name="hint_senha">Mot de passe</string>
+    <string name="text_nome">Nom</string>
+    <string name="text_cpf">Document D Identité</string>
+    <string name="text_telefone">Téléphone</string>
+    <string name="text_obs">Remarques</string>
+    <string name="text_data">Date</string>
+    <string name="text_hora">Heure</string>
+    <string name="button_salvar">Enregistrer</string>
+    <string name="button_cancelar">Annuler</string>
+    <string name="button_visitante">Visiteur</string>
+    <string name="button_terceiro">Fournisseur</string>
+    <string name="erro_preenchimento">Remplissez tous les champs</string>
+    <string name="erro_senha">Mot de passe incorrect, réessayez</string>
+    <string name="erro_cadastrar_user">Utilisateur déjà enregistré</string>
+    <string name="erro_email">L e-mail n est pas valide</string>
+    <string name="salvo_agendamento">Planification terminée avec succès</string>
+    <string name="falha_agendamento">Il y a eu un problème avec la planification</string>
+    <string name="falha_compartilhar">Aucun QR Code à partager n a été identifié</string>
+    <string name="button_config">Paramètres</string>
+    <string name="button_voltar">Retour</string>
+    <string name="button_pesquisa">Rechercher</string>
+    <string name="hint_busca">Entrez un nom pour la recherche</string>
+    <string name="title_creditos">Développé par</string>
+    <string name="text_equipe">Équipe Quick Vision - ADS 5ème semestre</string>
+    <string name="text_escolha_idioma">Choisir la langue</string>
+    <string-array name="lista_idiomas">
+        <item>Par défaut</item>
+        <item>Allemand</item>
+        <item>Espagnol</item>
+        <item>Français</item>
+        <item>Anglais</item>
+        <item>Portugais</item>
+    </string-array>
+</resources>

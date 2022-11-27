@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">QuickVision</string>
+    <string name="entrar">Login</string>
+    <string name="text_esqueci">Forgot your password? Click here</string>
+    <string name="tittle_esqueci">Recover Password</string>
+    <string name="tittle_qrcode">Your QR Code</string>
+    <string name="bt_enviar">Send</string>
+    <string name="title_menu">Menu</string>
+    <string name="button_agendar">Schedule</string>
+    <string name="button_consulta">Check Appointments</string>
+    <string name="button_entrada">Release Entry</string>
+    <string name="button_logout">Logout</string>
+    <string name="button_share">Share</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_confirm_email">Confirm your email</string>
+    <string name="hint_senha">Password</string>
+    <string name="text_nome">Name</string>
+    <string name="text_cpf">Document ID</string>
+    <string name="text_telefone">Phone</string>
+    <string name="text_obs">Notes</string>
+    <string name="text_data">Date</string>
+    <string name="text_hora">Time</string>
+    <string name="button_salvar">Save</string>
+    <string name="button_cancelar">Cancel</string>
+    <string name="button_visitante">Visitor</string>
+    <string name="button_terceiro">Provider</string>
+    <string name="erro_preenchimento">Fill in all fields</string>
+    <string name="erro_senha">Incorrect password, try again</string>
+    <string name="erro_cadastrar_user">User already registered</string>
+    <string name="erro_email">The email is not valid</string>
+    <string name="salvo_agendamento">Scheduling completed successfully</string>
+    <string name="falha_agendamento">There was a problem with scheduling</string>
+    <string name="falha_compartilhar">No QR Code to share was identified</string>
+    <string name="button_config">Settings</string>
+    <string name="button_voltar">Back</string>
+    <string name="button_pesquisa">Search</string>
+    <string name="hint_busca">Enter a name for the search</string>
+    <string name="title_creditos">Developed by</string>
+    <string name="text_equipe">Quick Vision Team - ADS 5th Semester</string>
+    <string name="text_escolha_idioma">Choose language</string>
+    <string-array name="lista_idiomas">
+        <item>Default</item>
+        <item>German</item>
+        <item>Spanish</item>
+        <item>French</item>
+        <item>English</item>
+        <item>Portuguese</item>
+    </string-array>
+
+</resources>

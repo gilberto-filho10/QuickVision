@@ -67,8 +67,8 @@ public class QRcode extends AppCompatActivity {
             /* Gerando GR Code */
             Bitmap bitmap;
             QRGEncoder qrgEncoder;
-            qrgEncoder = new QRGEncoder("Nome: " + nome + "\n" + "CPF: " + cpf + "\n" + "Telefone: " + telefone + "\n" + "Observações: " + obs
-                    + "\n" + "Agendamento : " + data + "\n" + "Hora: " + hora,null, QRGContents.Type.TEXT, 500);
+            qrgEncoder = new QRGEncoder(getString(R.string.text_nome) + ": " + nome + "\n" + getString(R.string.text_cpf) + ": " + cpf + "\n" + getString(R.string.text_telefone) + ": " + telefone + "\n" + getString(R.string.text_obs) + ": " + obs
+                    + "\n" + getString(R.string.text_data) + ": " + data + "\n" + getString(R.string.text_hora) + ": " + hora,null, QRGContents.Type.TEXT, 500);
             bitmap = qrgEncoder.getBitmap();
             img_qrcode.setImageBitmap(bitmap);
         }

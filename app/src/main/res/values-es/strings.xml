@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">QuickVision</string>
+    <string name="entrar">Iniciar sesión</string>
+    <string name="text_esqueci">¿Olvidaste tu contraseña? Haga clic aquí</string>
+    <string name="tittle_esqueci">Recuperar contraseña</string>
+    <string name="tittle_qrcode">Tu código QR</string>
+    <string name="bt_enviar">Enviar</string>
+    <string name="title_menu">Menú</string>
+    <string name="button_agendar">Horario</string>
+    <string name="button_consulta">Consultar Citas</string>
+    <string name="button_entrada">Entrada de liberación</string>
+    <string name="button_logout">Cerrar sesión</string>
+    <string name="button_share">Compartir</string>
+    <string name="hint_email">Correo electrónico</string>
+    <string name="hint_confirm_email">Confirma tu correo electrónico</string>
+    <string name="hint_senha">Contraseña</string>
+    <string name="text_nome">Nombre</string>
+    <string name="text_cpf">Documento de Identidad</string>
+    <string name="text_telefone">Teléfono</string>
+    <string name="text_obs">Notas</string>
+    <string name="text_data">Fecha</string>
+    <string name="text_hora">Tiempo</string>
+    <string name="button_salvar">Guardar</string>
+    <string name="button_cancelar">Cancelar</string>
+    <string name="button_visitante">Visitante</string>
+    <string name="button_terceiro">Proveedor</string>
+    <string name="erro_preenchimento">Rellenar todos los campos</string>
+    <string name="erro_senha">Contraseña incorrecta, intente nuevamente</string>
+    <string name="erro_cadastrar_user">Usuario ya registrado</string>
+    <string name="erro_email">El correo electrónico no es válido</string>
+    <string name="salvo_agendamento">Programación completada con éxito</string>
+    <string name="falha_agendamento">Hubo un problema con la programación</string>
+    <string name="falha_compartilhar">No se identificó ningún código QR para compartir</string>
+    <string name="button_config">Configuración</string>
+    <string name="button_voltar">Atrás</string>
+    <string name="button_pesquisa">Buscar</string>
+    <string name="hint_busca">Ingrese un nombre para la búsqueda</string>
+    <string name="title_creditos">Desarrollado por</string>
+    <string name="text_equipe">Equipo de Quick Vision - ADS 5to Semestre</string>
+    <string name="text_escolha_idioma">Elegir idioma</string>
+    <string-array name="lista_idiomas">
+        <item>Predeterminado</item>
+        <item>Alemán</item>
+        <item>Español</item>
+        <item>Francés</item>
+        <item>Inglés</item>
+        <item>Portugués</item>
+    </string-array>
+
+</resources>
