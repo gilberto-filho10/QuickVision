@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<androidx.core.widget.NestedScrollView
+<androidx.core.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Login">
@@ -28,6 +28,28 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/logo"/>
+
+    <View
+        android:id="@+id/conteiner_creditos"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/conteiner_devs"
+        android:drawableRight="@drawable/ic_eye"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressbar"/>
+    
+    <ImageView
+        android:id="@+id/creditos"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/ic_devs"
+        app:layout_constraintStart_toStartOf="@+id/conteiner_creditos"
+        app:layout_constraintEnd_toEndOf="@+id/conteiner_creditos"
+        app:layout_constraintTop_toTopOf="@+id/conteiner_creditos"
+        app:layout_constraintBottom_toBottomOf="@+id/conteiner_creditos"/>
 
     <EditText
         android:id="@+id/edit_email"

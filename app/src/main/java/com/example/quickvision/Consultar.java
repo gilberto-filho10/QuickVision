@@ -48,7 +48,6 @@ public class Consultar extends AppCompatActivity {
 
     }
 
-
     private void ConsultarAgendamento(){
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         DocumentReference documentReference = db.collection("Agendamentos").document(edit_pesquisar.getText().toString());

@@ -35,5 +35,7 @@
     <string name="button_voltar">Voltar</string>
     <string name="button_pesquisa">Pesquisar</string>
     <string name="hint_busca">Informe um nome para busca</string>
+    <string name="title_creditos">Desenvolvido por</string>
+    <string name="text_equipe">Equipe Quick Vision - 5º Semestre de ADS</string>
 
 </resources>

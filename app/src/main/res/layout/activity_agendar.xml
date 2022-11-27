@@ -32,22 +32,28 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/text_agendar"/>
 
-    <EditText
+    <com.santalu.maskara.widget.MaskEditText
         android:id="@+id/edit_cpf"
         style="@style/Edit_Text"
         android:hint="@string/text_cpf"
         android:layout_marginTop="10dp"
         android:inputType="number"
+        app:mask="___.___.___-__"
+        app:maskCharacter="_"
+        app:maskStyle="completable"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/edit_nome"/>
 
-    <EditText
+    <com.santalu.maskara.widget.MaskEditText
         android:id="@+id/edit_telefone"
         style="@style/Edit_Text"
         android:hint="@string/text_telefone"
         android:layout_marginTop="10dp"
         android:inputType="number"
+        app:mask="(__) _____-____"
+        app:maskCharacter="_"
+        app:maskStyle="completable"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/edit_cpf"/>
@@ -86,7 +92,7 @@
 
     </RadioGroup>
 
-    <EditText
+    <com.santalu.maskara.widget.MaskEditText
         android:id="@+id/edit_data"
         style="@style/Edit_Text"
         android:layout_width="180dp"
@@ -95,11 +101,14 @@
         android:layout_marginStart="40dp"
         android:hint="@string/text_data"
         android:inputType="date"
+        app:mask="__/__/____"
+        app:maskCharacter="_"
+        app:maskStyle="completable"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edit_obs" />
 
 
-    <EditText
+    <com.santalu.maskara.widget.MaskEditText
         android:id="@+id/edit_hora"
         style="@style/Edit_Text"
         android:layout_width="130dp"
@@ -107,6 +116,9 @@
         android:layout_marginEnd="40dp"
         android:hint="@string/text_hora"
         android:inputType="time"
+        app:mask="__:__"
+        app:maskCharacter="_"
+        app:maskStyle="completable"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/edit_obs" />
 

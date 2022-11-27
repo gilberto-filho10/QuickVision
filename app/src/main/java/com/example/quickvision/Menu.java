@@ -11,7 +11,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class Menu extends AppCompatActivity {
 
-    Button bt_agendar, bt_consulta, bt_entrada, bt_logout;
+    Button bt_agendar, bt_consulta, bt_entrada, bt_logout, bt_config;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +38,15 @@ public class Menu extends AppCompatActivity {
             }
         });
 
+        bt_config.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Menu.this, Configuracoes.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
         /*=============================================================================
         Botão de logout, verifica se existe uma sessão ativa no app e caso sim, ele
         finaliza ela e manda para a tela de login
@@ -58,5 +67,6 @@ public class Menu extends AppCompatActivity {
         bt_consulta = findViewById(R.id.bt_consulta);
         bt_entrada = findViewById(R.id.bt_entrada);
         bt_logout = findViewById(R.id.bt_logout);
+        bt_config = findViewById(R.id.bt_config);
     }
 }

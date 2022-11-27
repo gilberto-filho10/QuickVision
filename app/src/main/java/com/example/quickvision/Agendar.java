@@ -68,6 +68,7 @@ public class Agendar extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(Agendar.this, Menu.class);
                 startActivity(intent);
+                finish();
             }
         });
     }

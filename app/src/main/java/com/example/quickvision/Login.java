@@ -10,6 +10,7 @@ import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
@@ -30,6 +31,7 @@ public class Login extends AppCompatActivity {
     private Button bt_entrar;
     private EditText edit_email, edit_senha;
     private ProgressBar progressbar;
+    private ImageView creditos;
 
 
     @Override
@@ -45,6 +47,15 @@ public class Login extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(Login.this, Esqueci_senha.class);
                 startActivity(intent);
+            }
+        });
+
+        creditos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Login.this, Creditos.class);
+                startActivity(intent);
+                finish();
             }
         });
 
@@ -91,12 +102,12 @@ public class Login extends AppCompatActivity {
                     try {
                         throw task.getException();
                     } catch(FirebaseAuthWeakPasswordException e){
-                        erro = String.valueOf(R.string.erro_senha);
+                        erro = getString(R.string.erro_senha);
                     } catch (FirebaseAuthUserCollisionException e){
-                        erro = String.valueOf(R.string.erro_cadastrar_user);
+                        erro = getString(R.string.erro_cadastrar_user);
                     } catch (FirebaseAuthInvalidCredentialsException |
                             FirebaseAuthInvalidUserException e){
-                        erro = String.valueOf(R.string.erro_email);
+                        erro = getString(R.string.erro_email);
                     } catch (Exception e){
                         erro = "Erro " + e;
                     }
@@ -132,6 +143,7 @@ public class Login extends AppCompatActivity {
         edit_email = findViewById(R.id.edit_email);
         edit_senha = findViewById(R.id.edit_senha);
         progressbar = findViewById(R.id.progressbar);
+        creditos = findViewById(R.id.creditos);
     }
 
 }

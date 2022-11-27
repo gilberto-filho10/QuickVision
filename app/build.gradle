@@ -45,4 +45,5 @@ dependencies {
     implementation 'com.google.firebase:firebase-firestore'
 
     implementation 'com.github.androidmads:QRGenerator:1.0.1'
+    implementation 'com.github.santalu:maskara:1.0.0'
 }
